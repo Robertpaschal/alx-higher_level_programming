@@ -1,8 +1,8 @@
 #include <Python.h>
-#include <stdio.h>
+
 /**
- * print_python_list_info - Prints basic info about Python lisits.
- * @p: A PyObject list
+ * print_python_list_info - Prints basic info about Python lists.
+ * @p: A PyObject list.
  */
 void print_python_list_info(PyObject *p)
 {
@@ -17,9 +17,9 @@ void print_python_list_info(PyObject *p)
 
 	for (i = 0; i < size; i++)
 	{
-		printf("Element %d:", i);
+		printf("Element %d: ", i);
 
-		obj = PyList_Getltemp(p, i);
+		obj = PyList_GetItem(p, i);
 		printf("%s\n", Py_TYPE(obj)->tp_name);
 	}
 }
