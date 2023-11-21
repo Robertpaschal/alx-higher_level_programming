@@ -13,7 +13,6 @@ class Square:
     __init__: Initializes a Square object with an optional size
     area: Public instance method that returns the current square area.
     """
-
     def __init__(self, size=0):
         """
         Initializes a Square object with an optional size
@@ -38,7 +37,6 @@ class Square:
            """
 
            return self.__size
-
     @size.setter
     def size(self, value):
            """
