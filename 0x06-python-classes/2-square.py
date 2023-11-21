@@ -26,7 +26,7 @@ class Square:
         ValueError: If size is less than 0
         """
 
-        if not isinstnace(size, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an nteger")
 
         elif size < 0:
