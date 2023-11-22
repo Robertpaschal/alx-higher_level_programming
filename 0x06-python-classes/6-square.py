@@ -8,7 +8,8 @@ class Square:
 
     Attributes:
         __size: Private instance attribute representing the size of the square.
-        __position: Private instance attribute representing the position of the square.
+        __position: Private instance attribute representing \
+                the position of the square.
 
     Methods:
         __init__: Initializes a Square object with optional size and position.
@@ -22,11 +23,14 @@ class Square:
 
         Parameters:
             size (int): Optional size of the square. Defaults to 0.
-            position (tuple): Optional position of the square. Defaults to (0, 0).
+            position (tuple): Optional position of the square.\
+                    Defaults to (0, 0).
 
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
-            ValueError: If size is less than 0 or position values are not positive integers.
+            TypeError: If size is not an integer \
+                    or position is not a tuple of 2 positive integers.
+            ValueError: If size is less than 0 or \
+                    position values are not positive integers.
         """
         self.size = size
         self.position = position
@@ -82,8 +86,10 @@ class Square:
         Raises:
             TypeError: If position is not a tuple of 2 positive integers.
         """
-        if not isinstance(value, tuple) or len(value) != 2 or not all(isinstance(i, int) and i >= 0 for i in value):
-            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value, tuple) or len(value) != 2 or \
+                not all(isinstance(i, int) and i >= 0 for i in value):
+            raise TypeError("position must be a tuple \
+                        of 2 positive integers")
 
         self.__position = value
 

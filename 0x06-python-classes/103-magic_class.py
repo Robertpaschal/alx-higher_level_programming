@@ -4,12 +4,15 @@
 
 import math
 
+
 class MagicClass:
     """
-    This class represents a MagicClass that performs operations based on a radius.
+    This class represents a MagicClass\
+            that performs operations based on a radius.
 
     Attributes:
-        __radius: Private instance attribute representing the radius of the MagicClass.
+        __radius: Private instance attribute\
+                representing the radius of the MagicClass.
 
     Methods:
         __init__: Initializes a MagicClass object with a radius.

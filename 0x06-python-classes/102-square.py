@@ -11,7 +11,8 @@ class Square:
 
     Methods:
         __init__: Initializes a Square object with size.
-        size: Property and setter method for retrieving and setting the size of the square.
+        size: Property and setter method \
+                for retrieving and setting the size of the square.
         area: Public instance method that returns the current square area.
         __eq__: Magic method for equality comparison.
         __ne__: Magic method for inequality comparison.
