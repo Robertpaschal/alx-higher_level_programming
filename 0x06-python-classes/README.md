@@ -1,1 +1,1 @@
-Learning to use object oriented programming in python
+In this directory, I am learning classes and objects in python
