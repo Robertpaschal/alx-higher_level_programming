@@ -1,3 +1,7 @@
--- lists all shows contained in hbtn_0d_tvshows that have at least one genre linked
--- lists all rows of a database that have one column in common
-SELECT tv_shows.title, tv_show_genres.genre_id FROM tv_shows INNER JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
+-- creates the database hbtn_0d_2 and the user user_0d_2
+-- creates a database
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+-- creates a user
+CREATE USER IF NOT EXISTS user_0d_2@localhost IDENTIFIED BY 'user_0d_2_pwd';
+-- grants SELECT privileges to a user
+GRANT SELECT ON hbtn_0d_2.* TO user_0d_2@localhost;
