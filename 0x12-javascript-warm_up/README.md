@@ -1,0 +1,1 @@
+In this directory, I am lerning how to code in Javascript
