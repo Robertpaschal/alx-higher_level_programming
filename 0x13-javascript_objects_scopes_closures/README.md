@@ -1,0 +1,1 @@
+In this directory, I'd be learning Javascript objects, scopes and closures.
