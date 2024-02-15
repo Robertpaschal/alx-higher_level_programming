@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Script to list all states from the hbtn_0e_0_usa database"""
+"""Script to list all states with a name starting with N from the database"""
 
-import MySQLdb
 import sys
+import MySQLdb
 
 
-if __name__ == "__main__":
+def main():
     """Main function to connect to the MySQL server and fetch states"""
     username = sys.argv[1]
     password = sys.argv[2]
@@ -18,10 +18,9 @@ if __name__ == "__main__":
         passwd=password,
         db=database
     )
-
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
     rows = cursor.fetchall()
 
@@ -30,3 +29,7 @@ if __name__ == "__main__":
 
     cursor.close()
     db.close()
+
+
+if __name__ == "__main__":
+    main()
