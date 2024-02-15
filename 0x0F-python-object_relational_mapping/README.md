@@ -1,0 +1,1 @@
+In this directory, I am learning how to use SQLAlchemy. Scritping with python to create a relational database instead of using MySQL by creating an abstraction layer in the database.
