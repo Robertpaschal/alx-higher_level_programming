@@ -25,7 +25,7 @@ def main():
     if state:
         state.name = 'New Mexico'
         session.commit()
-        print("Name changed succesafully")
+        print("Name changed successfully")
     else:
         print("State with id 2 not found")
 
