@@ -13,7 +13,7 @@ def main():
     password = sys.argv[2]
     database = sys.argv[3]
 
-    engine = create_engine('mysql+mysqldb://{}: {}@localhose:3306/{}'.
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
                            format(username, password, database),
                            pool_pre_ping=True)
 
