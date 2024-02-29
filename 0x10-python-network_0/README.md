@@ -1,0 +1,1 @@
+In this directory, I am learning how to use HTTP requests and related terms: curl, GET, OST, DELETE and so on.
