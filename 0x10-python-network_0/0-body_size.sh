@@ -1,3 +1,3 @@
 #!/bin/bash
-# This script sends a request to the provided URL using curl in silent mode
-curl sI "$1" | grep -i Content-Length | awk '{print $2; print ""}'
+# This script sends a request to the provided URL and returns the size of the body of the response
+curl -s "${1}" | wc -c
