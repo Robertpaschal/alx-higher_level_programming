@@ -23,7 +23,7 @@ def main():
             print(body)
     except urllib.error.HTTPError as e:
         print("Error code:", e.code)
-    
+
 
 if __name__ == "__main__":
     main()
