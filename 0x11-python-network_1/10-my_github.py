@@ -23,7 +23,7 @@ def main():
         data = response.json()
 
         if 'id' in data:
-            print("User ID:", data['id'])
+            print(data['id'])
         else:
             print("Failed to retrive user ID.")
     except requests.exceptions.RequestException as e:
