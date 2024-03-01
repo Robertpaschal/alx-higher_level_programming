@@ -17,7 +17,7 @@ def main():
     url = sys.argv[1]
     email = sys.argv[2]
 
-    data = {'Your email is': email}
+    data = {'email': email}
 
     try:
         response = requests.post(url, data=data)
