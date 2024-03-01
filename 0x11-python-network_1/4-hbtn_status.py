@@ -12,6 +12,8 @@ def main():
     Fetches the URL https://alx-intranet.hbtn.io/status
     and displays the body of the response
     """
+
+
 url = "https://alx-intranet.hbtn.io/status"
 
 try:
