@@ -1,0 +1,1 @@
+In this directory, I am learning how to fetch http request using python urllib library and display the information about the response.
