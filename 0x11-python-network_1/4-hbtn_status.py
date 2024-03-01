@@ -6,6 +6,7 @@ and displays the body of the response
 
 import requests
 
+
 def main():
     """
     Fetches the URL https://alx-intranet.hbtn.io/status
