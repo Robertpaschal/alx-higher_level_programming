@@ -20,12 +20,18 @@ def main():
 
     try:
         response = requests.get(url, auth=(username, password))
-        data = response.json()
 
-        if 'id' in data:
-            print(data['id'])
+        if response.status_code == 200:
+            data = response.json()
+
+            if 'id' in data:
+                print(data['id'])
+            else:
+                print("Failed to retrive user ID.")
+        elif response.status_code == 401:
+            print("None")
         else:
-            print("Failed to retrive user ID.")
+            print("Error:", response.text)
     except requests.exceptions.RequestException as e:
         print("Error:", e)
 
