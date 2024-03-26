@@ -1,0 +1,1 @@
+In this directory, I am learning web scraping using JavaScript so that I can easily create JSON files from a script or module. I would learn to easily deserializae into an array as well as serialize the data into a JSON file when needed. Although JSON works with other languages, it is primarily a Javascript data property file hence, why I have to learn Javascript in the basics.
