@@ -1,0 +1,1 @@
+In this directory, I am learning Javascript Jquery and how to use it to manipulate and update DOM to render a more dynamic web page.
